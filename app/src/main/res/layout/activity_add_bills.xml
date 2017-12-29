@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/type_info_rl"
+        android:background="@color/yiban"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/type_marker_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/type_yiban" />
+
+        <TextView
+            android:id="@+id/type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/type_marker_iv"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="一般"
+            android:textSize="18sp" />
+
+        <EditText
+            android:focusable="false"
+            android:background="@null"
+            android:focusableInTouchMode="false"
+            android:id="@+id/money_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="¥0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="15dp"
+        android:id="@+id/consume_types_rv"
+        android:layout_below="@+id/type_info_rl"
+        android:layout_above="@+id/note_rl"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_above="@+id/keyboard_view"
+        android:id="@+id/note_rl"
+        android:background="@color/grapbag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/note_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="一般"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/note_content_tv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/note_iv"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/shuzi_selector"
+        android:keyTextColor="#000000"
+        android:keyTextSize="26sp"
+        android:shadowColor="#FFFFFF" />
+</RelativeLayout>

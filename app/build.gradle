@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+//使用greendao
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.example.duanzishou.com.daydaynote"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//属性介绍：
+//schemaVersion--> 指定数据库schema版本号，迁移等操作会用到;
+//daoPackage --> dao的包名，包名默认是entity所在的包；
+//targetGenDir --> 生成数据库文件的目录;
+greendao {
+    schemaVersion 1
+    daoPackage 'com.daydaynote'
+    targetGenDir 'src/main/java'
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //Design support库
+    //轻松实现图片园兴化
+    //
+    //声明卡片式布局
+    //超级强大的图片加载库，用于加载本地，网络，gif。甚至本地视频
+    //轮播图
+    //greendao包
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'org.greenrobot:greendao-generator:3.2.2'
+
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

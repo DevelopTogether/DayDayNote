@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/daydaynote/uitls/greendao/GreenDaoUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/note_iv.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/singlepos_addmemphotomenu.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/singlepos_tocamera.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/singlepos_tocancel.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/singlepos_topics.png" charset="GBK" />
+  </component>
+</project>

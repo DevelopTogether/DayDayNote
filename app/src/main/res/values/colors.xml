@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#457DD7</color>
+    <color name="colorPrimary2">#457DD7</color>
+    <color name="touming">#00000000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="text_bg">#8D9099</color>
+    <color name="black">#000000</color>
+    <color name="grapbg">#C0c0c0</color>
+    <color name="grapbag">#30C0c0c0</color>
+
+
+    <color name="yiban">#AFB341</color>
+    <color name="chuxing">#6B83B7</color>
+    <color name="fangzu">#D1B95D</color>
+    <color name="fushi">#B47CA7</color>
+    <color name="lvyou">#7F8B36</color>
+    <color name="renqing">#D05B97</color>
+    <color name="riyongpin">#6797A8</color>
+    <color name="tongxun">#475999</color>
+    <color name="xuexi">#6FAA70</color>
+    <color name="yiliao">#DBA7BC</color>
+    <color name="yongcan">#81ACA9</color>
+    <color name="yule">#ED9241</color>
+
+
+</resources>

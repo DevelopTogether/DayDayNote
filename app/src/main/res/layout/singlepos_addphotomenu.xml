@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="310dp"
+    android:background="@drawable/singlepos_addmemphotomenu"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/toCamera_ib"
+            android:layout_width="242dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/singlepos_tocamera"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/toPic_ib"
+            android:layout_width="242dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/toCamera_ib"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/singlepos_topics"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/toCancel_ib"
+            android:layout_width="242dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/toPic_ib"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/singlepos_tocancel"
+            android:scaleType="fitXY" >
+        </ImageButton>
+    </RelativeLayout>
+
+</LinearLayout>

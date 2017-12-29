@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/note_info_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grapbag"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar"></include>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/record_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017年9月1日" />
+
+        <EditText
+            android:id="@+id/note_info_et"
+            android:gravity="left"
+           android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:id="@+id/note_bottom_button_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/note_camera_iv"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:background="@drawable/camera_bg"
+            />
+        <TextView
+            android:background="@drawable/note_commit_shap"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/note_commit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="完成"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>
